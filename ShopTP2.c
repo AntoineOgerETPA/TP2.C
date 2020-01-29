@@ -54,9 +54,24 @@ typedef struct Shop shop;
 void degats (shop * buy) {
 	(*buy).price = (*buy).price;
 }
-void main() {
+int main() {
+		int choixJoueur = 0;
+	  char answer;
 	printf("Objets dans le Shop :\n\n");
 	stock();
-	printf("ID of the item you want to buy :\n",);
+	printf("ID of the item you want to buy :\n");
+	scanf("%d", &choixJoueur);
 
-}
+	if (choixJoueur == 1){
+	    printf("\nDo you want to buy a Spear ?\n[Y] OR [N]\n");
+			scanf("%c\n",&answer);
+			if(answer == 'Y'){
+	        printf("Success!\n");
+	        printf("Do you want to play again? Y or N: ");
+				}
+				else {
+	    printf("GoodBye!\n");
+	    return 0;
+			}
+		}
+	}
