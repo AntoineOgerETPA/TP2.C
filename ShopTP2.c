@@ -23,24 +23,24 @@ void Inventory(){
 	inventory Food = {"Food",0};
 	inventory CheatCode = {"CheatCode",0};
 
+	//CheatCode :
+		printf("Name : %s\n", CheatCode.name);
+		printf("Amount : %d\n", CheatCode.amount);
+	//Food :
+			printf("Name : %s\n", Food.name);
+			printf("Amount : %d\n", Food.amount);
+	//Katana :
+			printf("Name : %s\n", Katana.name);
+			printf("Amount : %d\n", Katana.amount);
 	//Spear :
 		printf("Name : %s\n", Spear.name);
 		printf("Amount : %d\n", Spear.amount);
 	//Shield :
 		printf("Name : %s\n", Shield.name);
 		printf("Amount : %d\n", Shield.amount);
-	//Katana :
-		printf("Name : %s\n", Katana.name);
-		printf("Amount : %d\n", Katana.amount);
 	//Water :
 		printf("Name : %s\n", Water.name);
 		printf("Amount : %d\n", Water.amount);
-	//Food :
-		printf("Name : %s\n", Food.name);
-		printf("Amount : %d\n", Food.amount);
-	//CheatCode :
-		printf("Name : %s\n", CheatCode.name);
-		printf("Amount : %d\n", CheatCode.amount);
 }
 
 typedef struct Shop shop;
@@ -53,36 +53,36 @@ typedef struct Shop shop;
 	shop Food = {"Food",5,50,2};
 	shop CheatCode = {"CheatCode",6,9999999,3};
 
-		//Spear :
-			printf("Name : %s\n", Spear.name);
-			printf("ID : %d\n", Spear.id);
-			printf("Price : %d\n", Spear.price);
-			printf("Category : %d\n\n", Spear.category);
-		//Shield :
-			printf("Name : %s\n", Shield.name);
-			printf("ID : %d\n", Shield.id);
-			printf("Price : %d\n", Shield.price);
-			printf("Category : %d\n\n", Shield.category);
-		//Katana :
-			printf("Name : %s\n", Katana.name);
-			printf("ID : %d\n", Katana.id);
-			printf("Price : %d\n", Katana.price);
-			printf("Category : %d\n\n", Katana.category);
-		//Water :
-			printf("Name : %s\n", Water.name);
-			printf("ID : %d\n", Water.id);
-			printf("Price : %d\n", Water.price);
-			printf("Category : %d\n\n", Water.category);
-		//Food :
-			printf("Name : %s\n", Food.name);
-			printf("ID : %d\n", Food.id);
-			printf("Price : %d\n", Food.price);
-			printf("Category : %d\n\n", Food.category);
-		//CheatCode :
-			printf("Name : %s\n", CheatCode.name);
-			printf("ID : %d\n", CheatCode.id);
-			printf("Price : %d\n", CheatCode.price);
-			printf("Category : %d\n\n", CheatCode.category);
+	//CheatCode :
+		printf("Name : %s\n", CheatCode.name);
+		printf("ID : %d\n", CheatCode.id);
+		printf("Price : %d\n", CheatCode.price);
+		printf("Category : %d\n\n", CheatCode.category);
+	//Food :
+		printf("Name : %s\n", Food.name);
+		printf("ID : %d\n", Food.id);
+		printf("Price : %d\n", Food.price);
+		printf("Category : %d\n\n", Food.category);
+	//Katana :
+		printf("Name : %s\n", Katana.name);
+		printf("ID : %d\n", Katana.id);
+		printf("Price : %d\n", Katana.price);
+		printf("Category : %d\n\n", Katana.category);
+	//Spear :
+		printf("Name : %s\n", Spear.name);
+		printf("ID : %d\n", Spear.id);
+		printf("Price : %d\n", Spear.price);
+		printf("Category : %d\n\n", Spear.category);
+	//Shield :
+		printf("Name : %s\n", Shield.name);
+		printf("ID : %d\n", Shield.id);
+		printf("Price : %d\n", Shield.price);
+		printf("Category : %d\n\n", Shield.category);
+	//Water :
+		printf("Name : %s\n", Water.name);
+		printf("ID : %d\n", Water.id);
+		printf("Price : %d\n", Water.price);
+		printf("Category : %d\n\n", Water.category);
 
 }
 
