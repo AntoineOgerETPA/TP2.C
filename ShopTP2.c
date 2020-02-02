@@ -13,7 +13,6 @@ struct Inventory{
 	char name[20];
 	int amount;
 };
-
 typedef struct Inventory inventory;
 
 void Inventory(){
@@ -86,24 +85,26 @@ typedef struct Shop shop;
 			printf("Category : %d\n\n", CheatCode.category);
 
 }
-void degats (shop * buy) {
-	(*buy).price = (*buy).price;
-}
+
+
 int main() {
 		int choixJoueur = 0;
-	  char answer;
 		int gold = 10000;
+		int Spear = 0;
+		int Shield = 0;
+		int Katana = 0;
+		int Water = 0;
+		int Food = 0;
 
 
-	printf("Objects in the Shop :\n\n");
+
+		printf("Objects in the Shop :\n\n");
 	stock();
 	printf("Inventory : enter 9\n\n");
+			 while (gold > 0){
 	printf("ID of the item you want to buy :\n");
 	scanf("%d", &choixJoueur);
 
-if (gold <= 0){
-	printf("no more Gold\n");
-}
 
 	if (choixJoueur == 1){
 	    printf("\nDo you want to buy a Spear ?\n[Y] OR [N]\n");
@@ -111,34 +112,36 @@ if (gold <= 0){
 	    printf("Success!\n");
 	        printf("Gold - 150$\n", gold -= 150 );
 					printf("Your Gold : %d$\n",gold);
-					Spear.amount + 1;
+					Spear = Spear + 1;
+
 				}
 			if (choixJoueur == 2){
 			    printf("\nDo you want to buy a Shield ?\n[Y] OR [N]\n");
 					scanf("%c\n");
 			    printf("Success!\n");
-			        printf("Gold - 150$\n", gold -= 250 );
+			        printf("Gold - 250$\n", gold -= 250 );
 							printf("Your Gold : %d$\n",gold);
+							Shield = Shield + 1;
 						}
 					if (choixJoueur == 3){
 					    printf("\nDo you want to buy a Katana ?\n[Y] OR [N]\n");
 							scanf("%c\n");
 					    printf("Success!\n");
-					        printf("Gold - 150$\n", gold -= 500 );
+					        printf("Gold - 500$\n", gold -= 500 );
 									printf("Your Gold : %d$\n",gold);
 								}
 						if (choixJoueur == 4){
 							    printf("\nDo you want to buy a Water ?\n[Y] OR [N]\n");
 									scanf("%c\n");
 							    printf("Success!\n");
-							        printf("Gold - 150$\n", gold -= 50 );
+							        printf("Gold - 50$\n", gold -= 50 );
 											printf("Your Gold : %d$\n",gold);
 										}
 									if (choixJoueur == 5){
 									    printf("\nDo you want to buy some Food ?\n[Y] OR [N]\n");
 											scanf("%c\n");
 									    printf("Success!\n");
-									        printf("Gold - 150$\n", gold -= 50 );
+									        printf("Gold - 50$\n", gold -= 50 );
 													printf("Your Gold : %d$\n",gold);
 												}
 											if (choixJoueur == 6){
@@ -148,8 +151,21 @@ if (gold <= 0){
 														}
 													if (choixJoueur == 9){
 													    printf("\nInvetory :\n");
-															Inventory();
+													    printf("Name : Spear\n");
+													    printf("Amount : %d\n",Spear);
+													    printf("\nName : Shield\n");
+													    printf("Amount : %d\n",Shield);
+													    printf("\nName : Katana\n");
+													    printf("Amount : %d\n",Katana);
+													    printf("\nName : Water\n");
+													    printf("Amount : %d\n",Water);
+													    printf("\nName : Food\n");
+													    printf("Amount: %d\n",Food);
+													    printf("Name : CheatCode\n");
+													    printf("Amount : 0\n");
 
 
 																}
 															}
+															return 0;
+													}
